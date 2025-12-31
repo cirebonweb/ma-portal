@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\Controllers\Admin\Billboard;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class BillboardSewa extends BaseController
+class Billboard extends BaseController
 {
     public function index()
     {
