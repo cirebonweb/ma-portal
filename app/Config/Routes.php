@@ -13,6 +13,7 @@ $routes->group('admin', ['filter' => 'group:admin'], function($routes) {
 
     $routes->group('billboard', ['namespace' => 'App\Controllers\Admin\Billboard'], function ($routes) {
         $routes->get('', 'Billboard::index');
+        $routes->get('add', 'Billboard::add');
         $routes->post('tabel', 'Billboard::tabel');
         // $routes->post('simpan', 'Billboard::simpan');
     });
