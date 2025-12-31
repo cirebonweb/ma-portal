@@ -10,7 +10,8 @@ class Billboard extends BaseController
     public function index()
     {
         $data = [
-            'pageTitle' => 'Billboard',
+            'pageTitle' => 'Data Billboard',
+            'navTitle' => 'Billboard',
             'navigasi'  => '',
         ];
         return view('admin/billboard/billboard', $data);
