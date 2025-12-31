@@ -7,7 +7,16 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::index', ['filter' => 'session']);
-$routes->get('admin', 'Admin\Dashboard::index', ['filter' => 'group:admin']);
+
+$routes->group('admin', ['filter' => 'group:admin'], function($routes) {
+    $routes->get('', 'Admin\Dashboard::index');
+
+    $routes->group('billboard', ['namespace' => 'App\Controllers\Admin\Billboard'], function ($routes) {
+        $routes->get('', 'Billboard::index');
+        $routes->post('tabel', 'Billboard::tabel');
+        // $routes->post('simpan', 'Billboard::simpan');
+    });
+});
 
 service('cirebonweb')->profil()->routes($routes, ['filter' => 'session']);
 service('cirebonweb')->userList()->routes($routes, ['filter' => 'group:admin']);
