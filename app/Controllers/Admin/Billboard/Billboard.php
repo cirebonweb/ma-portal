@@ -23,7 +23,7 @@ class Billboard extends BaseController
             'navTitle' => 'Billboard',
             'navigasi'  => '',
         ];
-        return view('admin/billboard/billboard', $data);
+        return view('admin/billboard/billboard_data', $data);
     }
 
     public function add()

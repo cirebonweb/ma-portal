@@ -3,6 +3,8 @@
     <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)">Billboard <i class="bi bi-caret-down ml-1"></i></a>
     <div class="dropdown-menu dropdown-menu-sm dropdown-menu">
         <a href="<?= url_to('admin/billboard') ?>" class="dropdown-item"><i class="bi bi-caret-right mr-1"></i>Data Billboard</a>
+        <a href="<?= url_to('admin/billboard/sewa') ?>" class="dropdown-item"><i class="bi bi-caret-right mr-1"></i>Sewa Billboard</a>
+        <a href="<?= url_to('admin/billboard/lahan') ?>" class="dropdown-item"><i class="bi bi-caret-right mr-1"></i>Lahan Billboard</a>
     </div>
 </li>
 

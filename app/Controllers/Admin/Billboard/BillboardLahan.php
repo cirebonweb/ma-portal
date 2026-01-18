@@ -9,6 +9,10 @@ class BillboardLahan extends BaseController
 {
     public function index()
     {
-        //
+        $data = [
+            'pageTitle' => 'Lahan Billboard',
+            'navigasi'  => '<a href="/admin/billboard">Billboard</a> &nbsp;',
+        ];
+        return view('admin/billboard/billboard_lahan', $data);
     }
 }

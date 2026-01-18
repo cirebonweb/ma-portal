@@ -9,6 +9,10 @@ class BillboardSewa extends BaseController
 {
     public function index()
     {
-        //
+        $data = [
+            'pageTitle' => 'Sewa Billboard',
+            'navigasi'  => '<a href="/admin/billboard">Billboard</a> &nbsp;',
+        ];
+        return view('admin/billboard/billboard_sewa', $data);
     }
 }
